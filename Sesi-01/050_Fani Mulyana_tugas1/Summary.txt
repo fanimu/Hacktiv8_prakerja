@@ -1,0 +1,29 @@
+apa aja yg perlu diinstal
+---
+code editor :
+- vscode (visual studio code) https://code.visualstudio.com/ (recommended)
+- atom
+- notepad2 / notepad plus / notepad
+- sublime
+
+server :
+- xampp 7.4 https://sourceforge.net/projects/xampp/files/XAMPP%20Windows/7.4.33/xampp-windows-x64-7.4.33-0-VC15-installer.exe/download
+	- apache (local server)
+  - mysql (versi free mariadb)
+laragon :
+	- apache (local server)
+  - nginx (local server)
+  - mysql (versi free mariadb)
+  
+git :
+https://git-scm.com/
+
+extension/plugin vscode (visual studio code) :
+- auto close tag (done)
+- html css support 
+- intellisense for css
+- prettier - code formatter
+- php server / live server
+  shorcut keyboard : shift+alt+f
+  
+---
