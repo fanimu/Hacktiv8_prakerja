@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tugas Mandiri 6</title>
+    <style>
+      .red {
+        color: red;
+      }
+
+      .blue {
+        color: blue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p class="paragraf1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quaerat recusandae qui ullam eaque cumque ea fugit, debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni, maiores in?</p>
+    <p class="paragraf2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quaerat recusandae qui ullam eaque cumque ea fugit, debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni, maiores in?</p>
+    <p class="paragraf3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quaerat recusandae qui ullam eaque cumque ea fugit, debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni, maiores in?</p>
+
+    <script>
+      // function tambahwarna() {
+      //   document.getElementsByClassName('paragraf1')[0].style.color = 'red';
+      //   document.getElementsByClassName('paragraf2')[0].style.color = 'green';
+      //   document.getElementsByClassName('paragraf3')[0].style.color = 'blue';
+      // }
+
+      // function hilangkanwarna() {
+      //   document.getElementsByClassName('paragraf1')[0].style.color = '';
+      //   document.getElementsByClassName('paragraf2')[0].style.color = '';
+      //   document.getElementsByClassName('paragraf3')[0].style.color = '';
+      // }
+
+      // Get the element using its ID
+      const paragraf1 = document.getElementsByClassName('paragraf1');
+
+      // Function to change the color of the element
+      function changeColor() {
+        // Toggle between red and blue classes
+        paragraf1.classList.add.toggle('red');
+        paragraf1.classList.add.toggle('blue');
+      }
+
+      // Change the color immediately
+      changeColor();
+
+      // Use setInterval to repeatedly change the color every second
+      const intervalId = setInterval(changeColor, 1000);
+
+      setTimeout(() => {
+        clearInterval(intervalId);
+      }, 10000);
+    </script>
+  </body>
+</html>

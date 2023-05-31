@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Javascript</title>
+  </head>
+  <body>
+    <h1>Belajar Javascript</h1>
+
+    <script>
+      var foo = '1 jam sama dengan 60 menit, juga sama dengan 3600 detik';
+      //   var pola = /\d+/;
+      var pola = /\d+/g;
+
+      console.log(pola.exec(foo)); // Array ["1"]
+      console.log(pola.exec(foo)); // Array ["60"]
+      console.log(pola.exec(foo)); // Array ["3600"]
+      console.log(pola.exec(foo)); // null
+    </script>
+  </body>
+</html>

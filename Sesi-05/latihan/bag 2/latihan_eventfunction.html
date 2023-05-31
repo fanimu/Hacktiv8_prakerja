@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Event</title>
+  </head>
+  <body>
+    <button onclick="mundur()">mundur</button>
+    <button onclick="maju()">maju</button>
+
+    <div id="hasil">0</div>
+    <div id="status">Status</div>
+
+    <script>
+      let i = 0;
+      function maju() {
+        document.getElementById('hasil').innerHTML = ++i;
+        document.getElementById('status').innerHTML = 'Status : Maju';
+      }
+
+      function mundur() {
+        document.getElementById('hasil').innerHTML = --i;
+        document.getElementById('status').innerHTML = 'Status : Mundur';
+      }
+    </script>
+  </body>
+</html>
