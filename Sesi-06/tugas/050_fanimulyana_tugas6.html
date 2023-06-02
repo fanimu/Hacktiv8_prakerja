@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tugas Mandiri 6</title>
+  </head>
+
+  <body>
+    <p class="paragraf1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quaerat recusandae qui ullam eaque cumque ea fugit, debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni, maiores in?</p>
+    <p class="paragraf2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quaerat recusandae qui ullam eaque cumque ea fugit, debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni, maiores in?</p>
+    <p class="paragraf3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quaerat recusandae qui ullam eaque cumque ea fugit, debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni, maiores in?</p>
+
+    <script>
+      const p1 = document.getElementsByClassName('paragraf1');
+      const p2 = document.getElementsByClassName('paragraf2');
+      const p3 = document.getElementsByClassName('paragraf3');
+
+      // panggil function
+      setWaktu();
+
+      // set function
+      function setWaktu() {
+        setInterval(() => {
+          p1[0].style.color = 'red';
+          p2[0].style.color = 'green';
+          p3[0].style.color = 'blue';
+          setTimeout(() => {
+            p1[0].style.color = 'black';
+            p2[0].style.color = 'black';
+            p3[0].style.color = 'black';
+          }, 500);
+        }, 1000);
+      }
+    </script>
+  </body>
+</html>
